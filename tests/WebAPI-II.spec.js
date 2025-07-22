@@ -33,7 +33,7 @@ test('Client/Buyer Testing', async () => {
 
   // Find a product dynamically
   await page.locator('.card-body b').first().waitFor();
-  const productName = 'IPHONE 13 PRO';
+  const productName = 'ADIDAS ORIGINAL';
   const titles = await page.locator(".card-body b").allTextContents();
   const count = await products.count();
 
@@ -69,7 +69,7 @@ test('Client/Buyer Testing', async () => {
   // Checkout
     await page.getByText('PLACE ORDER').click()
 
-  await page.pause()
+  // await page.pause()
   // Assert Order Confirmation
   const orderConfirmation = page.locator('.hero-primary');
   await expect(orderConfirmation).toHaveText('Thankyou for the order.');

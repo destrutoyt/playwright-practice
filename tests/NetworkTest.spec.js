@@ -1,5 +1,5 @@
 import { test, expect, request } from "@playwright/test";
-const { APIUtils } = require("./utils/APIUtils"); // Import the APIUtils class
+const { APIUtils } = require("../utils/APIUtils"); // Import the APIUtils class
 
 const loginPayLoad = {
   userEmail: "TestLike@gmail.com",

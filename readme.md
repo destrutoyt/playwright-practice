@@ -11,19 +11,12 @@ This repository contains a practical collection of UI and API automated tests us
 
 ## 🧰 Tech Stack
 
-- [Cypress](https://www.cypress.io) — test runner for API testing using `cy.request()` and `cy.intercept()`
-- JavaScript (ES6+) syntax
-- **Docker** — for isolated, reproducible test execution
+- [Playwright](https://playwright.dev) — Modern end-to-end test framework for web automation
+- JavaScript (ES6+) — clean syntax and async/await handling
+- Node.js — for test execution
 
 
 ## 🚀 Getting Started
-
-
-### Prerequisites
-
-- Playwright — Modern end-to-end test framework for web automation
-- JavaScript (ES6+) — clean syntax and async/await handling
-- Node.js — for test execution
 
 ### Installation
 

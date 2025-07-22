@@ -37,3 +37,6 @@ To run a specific test file:
 ```
 npx playwright test tests/<filename>.spec.js
 ```
+
+## ⚠️ WARNING
+In the `playwright.config.js` file, I set the workers to 1 to improve stability and reduce failed tests due to timeout issues. Increasing it will execute tests faster, but at the cost of less stability which leads to failed tests. Adjust it according to your system capabilities.

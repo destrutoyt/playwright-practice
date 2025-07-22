@@ -39,7 +39,7 @@ test('Screenshots & Visual Comparisons', async ({ page }) => {
 
 })
 
-test.only("Visual Testing", async ({ page }) => {
-    await page.goto("https://www.rediff.com/");
-    expect(await page.screenshot()).toMatchSnapshot("landing.png"); // Take a screenshot and compare it with the snapshot
-})
+// test("Visual Testing", async ({ page }) => { // This test is commented out to avoid running it automatically. Make sure the toMatchSnapshot() contains the correct path to the snapshot file.
+//     await page.goto("https://www.rediff.com/");
+//     expect(await page.screenshot()).toMatchSnapshot("landing.png"); // Take a screenshot and compare it with the snapshot
+// })

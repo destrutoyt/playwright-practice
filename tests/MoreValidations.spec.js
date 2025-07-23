@@ -1,6 +1,9 @@
 import {test , expect} from '@playwright/test';
 
-test('Popup Validation', async ({ page }) => {
+// test.describe.configure({ mode: 'serial' }); // Ensures tests run in sequence
+// test.describe.configure({ mode: 'parallel' }); // Allows tests to run in parallel
+
+test('@WEB Popup Validation', async ({ page }) => {
 
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
 
@@ -27,7 +30,7 @@ test('Popup Validation', async ({ page }) => {
     console.log(textCheck.split(" ")[1]);
 })
 
-test('Screenshots & Visual Comparisons', async ({ page }) => {
+test('@WEB Screenshots & Visual Comparisons', async ({ page }) => {
     
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await expect(page.locator("#displayed-text")).toBeVisible() // Take a screenshot of the element

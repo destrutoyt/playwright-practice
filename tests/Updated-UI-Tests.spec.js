@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
  
-test('@Webst Client App login', async ({ page }) => {
+test('@WEB Client App login', async ({ page }) => {
    //js file- Login js, DashboardPage
    const email = "TestLike@gmail.com";
    const password = "Thisatest123";

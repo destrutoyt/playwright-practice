@@ -1,7 +1,7 @@
 const { test,expect } = require('@playwright/test');
  
  // Intercepting network requests and responses
-test('@QW Security test request intercept', async ({ page }) => {
+test('@NET Security test request intercept', async ({ page }) => {
  
     //login and reach orders page
     await page.goto("https://rahulshettyacademy.com/client");

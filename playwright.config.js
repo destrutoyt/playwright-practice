@@ -13,11 +13,12 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  workers: 1, // Run tests in a single worker. Using more workers can lead to failed tests due to "timeout" issues. Adjust based on your system's capabilities. More workers > Faster Execution, but less stability.
+  workers: 2, // Run tests in a single worker. Using more workers can lead to failed tests due to "timeout" issues. Adjust based on your system's capabilities. More workers > Faster Execution, but less stability.
   testDir: './tests',
-  timeout: 80 * 1000, // 80 seconds
+  retries: 1, // Retry failed tests once
+  timeout: 40 * 1000, // 40 seconds
   expect: {
-    timeout: 80 * 1000, // 80 seconds
+    timeout: 40 * 1000, // 40 seconds
   },
 
   reporter: 'html',

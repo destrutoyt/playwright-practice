@@ -39,4 +39,4 @@ npx playwright test tests/<filename>.spec.js
 ```
 
 ## ⚠️ WARNING
-In the `playwright.config.js` file, I set the workers to 1 to improve stability and reduce failed tests due to timeout issues. Increasing it will execute tests faster, but at the cost of less stability which leads to failed tests. Adjust it according to your system capabilities.
+In the `playwright.config.js` file, I set the workers to 2 to improve stability and reduce failed tests due to timeout issues. Increasing it will execute tests faster, but at the cost of less stability which leads to failed tests. Adjust it according to your system capabilities. Additionally, you may increase the `retries: 1` to execute the test again if it fails, but it will throw a "flaky" or "warning" message.

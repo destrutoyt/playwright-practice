@@ -20,7 +20,7 @@ test.beforeEach( () => {
 });
 
 
-test('Client/Buyer Testing', async ({browser}) => {
+test('@API Client/Buyer Testing', async ({browser}) => {
 
   const context = await browser.newContext();
   const page = await context.newPage();

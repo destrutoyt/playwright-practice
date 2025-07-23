@@ -5,7 +5,7 @@ const { POManager } = require("../page-objects/POManager");
 const testData = JSON.parse(JSON.stringify(require(("../utils/placeOrderTestData.json"))));  // JSON -> STRING -> JS OBJECT
 
 for (const data of testData) {   // Loop through each data set in the test data
-   test(`Client Login using Page Objects ${data.productName}`, async ({ page }) => {
+   test(`@WEB Client Login using Page Objects ${data.productName}`, async ({ page }) => {
    //js file- Login js, DashboardPage
    const email = data.username;
    const password = data.password;
@@ -37,7 +37,7 @@ for (const data of testData) {   // Loop through each data set in the test data
    });
 }
 
-customTest(`Client Login using Page Objects & Fixtures`, async ({ page, testDataForOrder }) => {   // Using the custom fixture defined in test-base.js
+customTest(`@WEB Client Login using Page Objects & Fixtures`, async ({ page, testDataForOrder }) => {   // Using the custom fixture defined in test-base.js
 //js file- Login js, DashboardPage
 const email = testDataForOrder.username;
 const password = testDataForOrder.password;

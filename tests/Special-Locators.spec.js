@@ -2,7 +2,7 @@ const {test, expect} = require('@playwright/test'); // IMPORTANT TO ENABLE PLAYW
 
 // Playwright has a global timeout of 30 seconds which is overridden by the configuration file
 
-test('GetBy Locators', async ({page}) => {        // Browser is a fixture that must have curly braces in order to work or it would be identified as a variable
+test('@WEB GetBy Locators', async ({page}) => {        // Browser is a fixture that must have curly braces in order to work or it would be identified as a variable
 
     await page.goto("https://rahulshettyacademy.com/angularpractice/") // Navigates to the specified 
     await page.getByLabel("Check me out if you love IceCreams!").click() // Locates the checkbox by its label

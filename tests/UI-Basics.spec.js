@@ -3,7 +3,7 @@ const {test, expect} = require('@playwright/test'); // IMPORTANT TO ENABLE PLAYW
 // Playwright has a global timeout of 30 seconds which is overridden by the configuration file
 
 
-test('Basics of Playwright - First Playwright Test', async ({browser}) => {        // Browser is a fixture that must have curly braces in order to work or it would be identified as a variable
+test('@WEB Basics of Playwright - First Playwright Test', async ({browser}) => {        // Browser is a fixture that must have curly braces in order to work or it would be identified as a variable
 
     // Opens a new browser context (like a new incognito window)
     // await means that the test will wait for the browser to open before proceeding
@@ -36,7 +36,7 @@ test('Basics of Playwright - First Playwright Test', async ({browser}) => {     
     
 });
 
-test('UI Controls', async ({page}) => {        // .only() is used to run only this test, ignoring others
+test('@WEB UI Controls', async ({page}) => {        // .only() is used to run only this test, ignoring others
 
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/") // Navigates to the specified URL
 
@@ -70,7 +70,7 @@ test('UI Controls', async ({page}) => {        // .only() is used to run only th
     // await page.pause(); // Pauses the execution of the test, allowing you to inspect the page manually
 });
 
-test('Section 4 - Log in and find first card title/element', async ({browser}) => {        // .only() is used to run only this test, ignoring others
+test('@WEB Section 4 - Log in and find first card title/element', async ({browser}) => {        // .only() is used to run only this test, ignoring others
 
     const context = await browser.newContext();
     const page = await context.newPage();
@@ -91,7 +91,7 @@ test('Section 4 - Log in and find first card title/element', async ({browser}) =
     console.log(await cardTitles.nth(1).textContent()) // Gets the text content of the second element with the specified class
 });
 
-test('Child Windows Handling', async ({browser}) => {        // .only() is used to run only this test, ignoring others
+test('@WEB Child Windows Handling', async ({browser}) => {        // .only() is used to run only this test, ignoring others
 
     const context = await browser.newContext();
     const page = await context.newPage();

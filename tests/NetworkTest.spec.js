@@ -23,7 +23,7 @@ test.beforeAll(async () => {
  
  
 //create order is success
-test('@SP Place the order', async ({ page }) => {
+test('@NET Place the order', async ({ page }) => {
   page.addInitScript(value => {
  
     window.localStorage.setItem('token', value);

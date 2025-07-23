@@ -26,7 +26,14 @@ export default defineConfig({
     browserName: 'chromium',
     headless: true, // Set to false if you want to see the browser in action
     screenshot: 'only-on-failure', // Take a screenshot only on test failure
-    trace: 'retain-on-failure' // Retain trace files only on test failure
+    // video: 'retain-on-failure', // Record video only on test failure
+    ignoreHTTPSErrors: true, // Ignore HTTPS errors (such as SSL certificate issues, useful for testing on local servers)
+    permissions: ['geolocation'], // Allow geolocation permissions
+    trace: 'retain-on-failure', // Retain trace files only on test failure
+    viewport: {
+      width: 1980,
+      height: 1080,
+    }
   },
 });
 

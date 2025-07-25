@@ -1,0 +1,3 @@
+beforeAll - This will run once before all tests
+beforeEach - This will run before each test
+Token set in localStorage. Login should be successful.

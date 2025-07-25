@@ -1,0 +1,3 @@
+Titles:  [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
+Count:  3
+End of loop

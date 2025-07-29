@@ -10,8 +10,6 @@ const orderPayLoad  = {
 };
 const fakePayLoadOrders = { data: [], message: "No Orders" };
 
-let token;
-let orderId;
 let response; // Declare response variable to store the order ID
 
 test.beforeAll(async () => {
